@@ -19,17 +19,17 @@ Auth::routes();
 Route::get('/dev', function () {
 
     dd(resolve('BookingXApiit'));
-    // dd(resolve('view'));
+    dd(resolve('view'));
 
-    // $user = (new \App\Models\Auth\User)->where('role', 'admin')->first();
+    $user = (new \App\Models\Auth\User)->where('role', 'admin')->first();
 
-    // debug($user);
+    debug($user);
 
-    // dd($user);
+    dd($user);
 
-    // dd((new Page()));
+    dd((new Page()));
 
-    // dd('dev');
+    dd('dev');
 
     return view('home');
 });
